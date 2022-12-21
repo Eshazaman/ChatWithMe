@@ -1,0 +1,33 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="./login.js"></script>
+</head>
+<body>
+    <form action="/authenticate" method="post">
+        <h2>Login</h2>
+        <div class="input-field">
+            <input type="text" name="username" id="username" placeholder="Enter Username">
+        </div>
+        <div class="input-field">
+            <input type="password" name="password" id="password" placeholder="Enter Password">
+        </div>
+
+         <div class="form-control">
+            <label for="room">Room</label>
+            <select name="room" id="room">
+                <option value="Fodbold">Fodbold</option>
+                <option value="Makeup">Makeup</option>
+                <option value="Matematik">Matematik</option>
+                <option value="Kærlighed">Kærlighed</option>
+            </select>
+        </div>
+        <button type="submit" class="btn">Join Chat</button>
+    </form>
+
+    <a href="http://localhost:4000/signup.html">
+        <input type="button" value="Opret Ny Bruger" />
+     </a>
+
+</body>
+</html>
